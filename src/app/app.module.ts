@@ -7,26 +7,18 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AboutComponent } from './components/about/about.component';
 //Routes
 import{RouterModule,Routes} from '@angular/router';
-const routes: Routes = [
-  {
-    path:'',
-    component:AppComponent
-  },
-  {
-    path:'about',
-    component:AboutComponent
-  }
-];
+import { HomeComponent } from './components/home/home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    AboutComponent
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
