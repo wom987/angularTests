@@ -8,13 +8,17 @@ import { AboutComponent } from './components/about/about.component';
 //Routes
 import{RouterModule,Routes} from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { GetUsersComponent } from './components/users/get-users/get-users.component';
+import { PostUsersComponent } from './components/users/post-users/post-users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    GetUsersComponent,
+    PostUsersComponent
   ],
   imports: [
     BrowserModule,
